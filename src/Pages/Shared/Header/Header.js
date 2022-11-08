@@ -23,7 +23,7 @@ const Header = () => {
             <label tabIndex={0} className=" btn-btn-ghost lg:hidden"></label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2  shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow-xl rounded-box w-52"
             >
               {menuItems}
             </ul>
