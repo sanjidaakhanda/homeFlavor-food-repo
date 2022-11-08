@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   const handleLogIn = (event) => {
     event.preventDefault();
@@ -19,7 +19,7 @@ const Login = () => {
 
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <h1 className="text-5xl font-bold mb-10 text-center text-rose-500">
-              Login now!
+              Log in
             </h1>
 
             <form onSubmit={handleLogIn} className="card-body">
@@ -28,7 +28,7 @@ const Login = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="email"
                   name="email"
                   className="input input-bordered"
@@ -39,21 +39,25 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   placeholder="password"
                   name="password"
                   className="input input-bordered"
                 />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
               </div>
               <div className="form-control mt-6">
                 <input type="submit" value="login" className="btn btn-error" />
               </div>
             </form>
+            <p className="text-center mb-5">
+              New to our Website! Please
+              <Link
+                to="/signup"
+                className="text-orange-600 text-bold font-semibold "
+              >
+                Signup
+              </Link>
+            </p>
           </div>
         </div>
       </div>

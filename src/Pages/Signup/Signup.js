@@ -1,13 +1,17 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Signup = () => {
+  const handleSignUp = (event) => {
+    event.preventDefault();
+  };
   return (
     <div>
       <div className="hero w-full my-10">
         <div className="hero-content grid md:grid-cols-2 gap-20 flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <img
-              src="https://img.freepik.com/free-vector/sign-page-abstract-concept-illustration_335657-2242.jpg?w=740&t=st=1667945646~exp=1667946246~hmac=e4cc2acc6193a0ac1f88b4035992aff391d7820c903ca4d370a0272094f1bc10"
+              src="
+              https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7865.jpg?w=740&t=st=1667947265~exp=1667947865~hmac=ce5a0cb5d4f1455f3a9737c97ad1a67a5210cf13b4c440e1aa15e6abaf835e29"
               alt=""
               srcset=""
             />
@@ -15,16 +19,27 @@ const Signup = () => {
 
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <h1 className="text-5xl font-bold mb-10 text-center text-rose-500">
-              Login now!
+              Sign up
             </h1>
 
-            <form onSubmit={handleLogIn} className="card-body">
+            <form onSubmit={handleSignUp} className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text"> Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  className="input input-bordered"
+                />
+              </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   placeholder="email"
                   name="email"
                   className="input input-bordered"
@@ -35,21 +50,29 @@ const Signup = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   placeholder="password"
                   name="password"
                   className="input input-bordered"
                 />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
               </div>
               <div className="form-control mt-6">
-                <input type="submit" value="login" className="btn btn-error" />
+                <input
+                  type="submit"
+                  value="sign up"
+                  className="btn btn-error"
+                />
               </div>
             </form>
+            <p className="text-center mb-5">
+              Already have an account
+              <Link
+                to="/login"
+                className="text-orange-600 text-bold font-semibold "
+              >
+                Login
+              </Link>
+            </p>
           </div>
         </div>
       </div>
