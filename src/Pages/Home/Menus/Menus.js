@@ -12,7 +12,7 @@ const Menus = () => {
 
   return (
     <div>
-      <p className="text-4xl text-rose-500 text-center mt-5 font-semibold">
+      <p className="text-4xl text-rose-500 text-center mt-5 font-bold">
         Our Menus
       </p>
       <p className=" font-semibold text-center mb-5">
