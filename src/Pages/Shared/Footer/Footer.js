@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer className="footer items-center p-4  text-neutral-content">
         <div className="items-center grid-flow-col text-sky-500">
-          <p className="text-xl">
+          <p className="text-xl font-medium">
             <FaHome></FaHome> HomeFlavorFooD
           </p>
         </div>
