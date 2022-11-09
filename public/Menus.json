@@ -4,41 +4,77 @@
     "image": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=900&t=st=1667943861~exp=1667944461~hmac=f284449d6915ef0db1e54bd3ef5b2eb2e252d31ef23f50d0b913e04ba0bb3097",
     "name": "DOUBLE CHEESEBURGER",
     "price": "$ 10.99",
-    "description": "A huge single or triple burger with all the fixings, cheese, lettuce, tomato, onions and special sauce or mayonnaise"
+    "description": "A huge single or triple burger with all the fixings, cheese, lettuce, tomato, onions and special sauce or mayonnaise",
+    "reviews": [
+      {
+        "item": "DOUBLE CHEESEBURGER",
+        "customer": "Its a very delicious burger in the town"
+      }
+    ]
   },
   {
     "id": 2,
     "image": "https://img.freepik.com/premium-photo/turkish-fish-sandwich-with-grilled-mackerel-fillet-balik-ekmek-black-background-top-view_89816-40271.jpg?w=900",
     "name": "FRIED FISH SANDWICH",
     "price": "$ 9.99",
-    "description": "Dive into our wild-caught Fried-Fish-Sandwich! This  fish sandwich has fish sourced from sustainably managed fisheries, on melty American cheese and topped with creamy McDonald’s tartar sauce, all served on a soft, steamed bun"
+    "description": "Dive into our wild-caught Fried-Fish-Sandwich! This  fish sandwich has fish sourced from sustainably managed fisheries, on melty American cheese and topped with creamy McDonald’s tartar sauce, all served on a soft, steamed bun",
+    "reviews": [
+      {
+        "item": "FRIED FISH SANDWICH",
+        "customer": "Its a very delicious sandwich in the town"
+      }
+    ]
   },
   {
     "id": 3,
     "image": "https://img.freepik.com/premium-photo/burger-double-cutlet-double-cheddar-cheese-bacon-deep-fried-onions-pickles-sauce-craft-bun_524291-99.jpg?w=900",
     "name": "ITALIAN CHEESEBURGER",
     "price": "$ 11.99",
-    "description": "A huge single or triple burger with all the fixings, cheese, lettuce, tomato, onions and special sauce or mayonnaise"
+    "description": "A huge single or triple burger with all the fixings, cheese, lettuce, tomato, onions and special sauce or mayonnaise",
+    "reviews": [
+      {
+        "item": "ITALIAN CHEESEBURGER",
+        "customer": "Its a very delicious cheeseburger in the town"
+      }
+    ]
   },
   {
     "id": 4,
     "image": "https://img.freepik.com/premium-photo/shawarma-rolled-lavash-with-grilled-meat-vegetables-wooden-background_124865-658.jpg?w=900",
     "name": "BEEF OR CHICKEN GYRO",
     "price": "$ 12.99",
-    "description": "Flank steak stars in this street cart-inspired pita wrap recipe. Tuck the Greek-marinated Beef Gyros inside a fluffy pita bread, and top with homemade tzatziki sauce."
+    "description": "Flank steak stars in this street cart-inspired pita wrap recipe. Tuck the Greek-marinated Beef Gyros inside a fluffy pita bread, and top with homemade tzatziki sauce.",
+    "reviews": [
+      {
+        "item": "BEEF OR CHICKEN GYRO",
+        "customer": "Its a very delicious gyro in the town"
+      }
+    ]
   },
   {
     "id": 5,
     "image": "https://img.freepik.com/premium-photo/chicken-strips-plate-with-parsley-sauce-black-rustic-table_220768-9960.jpg?w=900",
     "name": "15 PIECE CHICKEN STRIPS",
     "price": "$ 8.99",
-    "description": "Crispy breaded chicken tenders are a grill and bar classic. Served with honey Dijon mustard, signature coleslaw and fries"
+    "description": "Crispy breaded chicken tenders are a grill and bar classic. Served with honey Dijon mustard, signature coleslaw and fries",
+    "reviews": [
+      {
+        "item": "15 PIECE CHICKEN STRIPS",
+        "customer": "Its a very delicious chicken strips in the town"
+      }
+    ]
   },
   {
     "id": 6,
     "image": "https://img.freepik.com/free-photo/side-view-tempura-shrimps-with-sweet-chili-sauce-slice-lemon-black-olive-plate_141793-5136.jpg?w=900&t=st=1667920533~exp=1667921133~hmac=8776ca36b24f9b444405766d174e0928600da6ac83bb87eb986fe886a89b470a",
     "name": "SHRIMP BASKET",
     "price": "$ 13.99",
-    "description": "These fried shrimp have just the right amount of crunch thanks to the panko bread crumbs. If desired, serve with Kikkoman Tonkatsu Sauce for dipping."
+    "description": "These fried shrimp have just the right amount of crunch thanks to the panko bread crumbs. If desired, serve with Kikkoman Tonkatsu Sauce for dipping.",
+    "reviews": [
+      {
+        "item": "SHRIMP BASKET",
+        "customer": "Its a very delicious shrimp basket  in the town"
+      }
+    ]
   }
 ]

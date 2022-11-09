@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import MenuCard from "./MenuCard";
+import MenuDetails from "./MenuDetails";
 
 const Menus = () => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    fetch("Menus.json")
+    fetch("http://localhost:5000/menus")
       .then((res) => res.json())
       .then((data) => setMenus(data));
   }, []);
