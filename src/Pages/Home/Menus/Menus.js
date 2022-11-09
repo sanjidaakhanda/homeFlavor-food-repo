@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MenuCard from "./MenuCard";
-import MenuDetails from "./MenuDetails";
-
+import { Link } from "react-router-dom";
 const Menus = () => {
   const [menus, setMenus] = useState([]);
 
@@ -23,8 +22,15 @@ const Menus = () => {
       </p>
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {menus.map((menu) => (
-          <MenuCard key={menu.id} menu={menu}></MenuCard>
+          <MenuCard key={menu.menu_id} menu={menu}></MenuCard>
         ))}
+      </div>
+      <div className="text-center m-5">
+        <Link to={"/menus"}>
+          <button className="btn btn-outline btn-error text-xl font-bold">
+            See All
+          </button>
+        </Link>
       </div>
     </div>
   );
