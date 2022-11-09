@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Contexts/AuthProvider";
 const Login = () => {
+  const { logIn } = useContext(AuthContext);
   const handleLogIn = (event) => {
     event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+
+    logIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -13,7 +26,6 @@ const Login = () => {
             <img
               src="https://img.freepik.com/free-vector/sign-page-abstract-concept-illustration_335657-2242.jpg?w=740&t=st=1667945646~exp=1667946246~hmac=e4cc2acc6193a0ac1f88b4035992aff391d7820c903ca4d370a0272094f1bc10"
               alt=""
-              srcset=""
             />
           </div>
 

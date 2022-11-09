@@ -10,10 +10,7 @@ const MenuCard = ({ menu }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title text-rose-500">{name}</h2>
-          <p className="text-black-500 font-semibold text-xl">
-            {" "}
-            Price: {price}
-          </p>
+          <p className="text-black-500 font-semibold text-xl">Price: {price}</p>
           <div className="card-actions justify-end">
             <button className="btn btn-error">Buy Now</button>
           </div>
