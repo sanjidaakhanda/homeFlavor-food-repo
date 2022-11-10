@@ -32,7 +32,7 @@ const Reviews = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledged) {
-          alert("review placed");
+          alert("review placed successfully ");
           form.reset();
         }
         console.log(data);

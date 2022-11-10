@@ -6,6 +6,7 @@ import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import MenuDetail from "../../Pages/MenuDetail/MenuDetail";
 import Reviews from "../../Pages/Reviews/Reviews";
+import ShowReview from "../../Pages/ShowReview/ShowReview";
 
 import Signup from "../../Pages/Signup/Signup";
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         element: <Reviews></Reviews>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/menus/${params.id}`),
+      },
+      {
+        path: "/reviews",
+        element: <ShowReview></ShowReview>,
       },
     ],
   },

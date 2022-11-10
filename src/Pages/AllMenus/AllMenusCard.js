@@ -14,7 +14,7 @@ const AllMenusCard = ({ allMenu }) => {
           <p className="text-black-500 font-semibold text-xl"> Price:{price}</p>
           <div className="card-actions justify-end">
             <Link to={`/reviews/${_id}`}>
-              <button className="btn btn-error">Buy Now</button>
+              <button className="btn btn-error">Write Review</button>
             </Link>
           </div>
         </div>
