@@ -5,6 +5,7 @@ import AllMenusCard from "../../Pages/AllMenus/AllMenusCard";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import MenuDetail from "../../Pages/MenuDetail/MenuDetail";
+import Reviews from "../../Pages/Reviews/Reviews";
 
 import Signup from "../../Pages/Signup/Signup";
 
@@ -31,6 +32,12 @@ const router = createBrowserRouter([
       {
         path: "/menus",
         element: <AllMenus></AllMenus>,
+      },
+      {
+        path: "/reviews/:id",
+        element: <Reviews></Reviews>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/menus/${params.id}`),
       },
     ],
   },
