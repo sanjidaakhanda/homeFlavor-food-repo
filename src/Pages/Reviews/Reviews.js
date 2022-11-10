@@ -21,6 +21,23 @@ const Reviews = () => {
       message,
       email,
     };
+
+    fetch("http://localhost:5000/reviews", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(review),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.acknowledged) {
+          alert("review placed");
+          form.reset();
+        }
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
   };
   return (
     <div>
