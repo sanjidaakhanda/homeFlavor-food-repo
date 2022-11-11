@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
+
 import AllMenusCard from "./AllMenusCard";
 const AllMenus = () => {
   const [allMenus, setAllMenus] = useState([]);

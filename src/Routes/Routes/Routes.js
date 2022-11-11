@@ -1,6 +1,7 @@
 import Main from "../../Layout/Main";
 import AllMenus from "../../Pages/AllMenus/AllMenus";
-import AllMenusCard from "../../Pages/AllMenus/AllMenusCard";
+
+import Blog from "../../Pages/Blog/Blog";
 
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/reviews",
         element: <ShowReview></ShowReview>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
       },
     ],
   },

@@ -1,7 +1,7 @@
 import React from "react";
 
 const ShowReviewRow = ({ review }) => {
-  const { itemId, itemName, message, _id, phone, price } = review;
+  const { itemId, itemName, message, price } = review;
   console.log(review);
   return (
     <div>
