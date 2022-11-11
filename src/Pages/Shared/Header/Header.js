@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -7,15 +7,37 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/AuthProvider";
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
+
   const menuItems = (
     <>
       <li className="font-semibold text-sky-500">
         <Link to="/">Home</Link>
       </li>
-      <li className="font-semibold text-sky-500">
-        <Link to="/login">Login</Link>
-      </li>
+      {user?.email ? (
+        <>
+          <li className="font-semibold text-sky-500">
+            <Link to="/reviews">Reviews</Link>
+          </li>
+          <li>
+            <button
+              onClick={handleLogOut}
+              className="btn-ghost font-semibold text-sky-500"
+            >
+              log out
+            </button>
+          </li>
+        </>
+      ) : (
+        <li className="font-semibold text-sky-500">
+          <Link to="/login">Login</Link>
+        </li>
+      )}
     </>
   );
   return (
@@ -29,6 +51,23 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow-xl rounded-box w-52"
             >
               {menuItems}
+              <li>
+                <a>item-1</a>
+              </li>
+              <li tabIndex={0}>
+                <a className="justify-between">Parent</a>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Item 3</a>
+              </li>
             </ul>
           </div>
           <Link

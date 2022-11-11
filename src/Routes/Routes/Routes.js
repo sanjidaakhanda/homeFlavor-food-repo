@@ -10,6 +10,7 @@ import Reviews from "../../Pages/Reviews/Reviews";
 import ShowReview from "../../Pages/ShowReview/ShowReview";
 
 import Signup from "../../Pages/Signup/Signup";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -33,11 +34,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/menus",
-        element: <AllMenus></AllMenus>,
+        element: (
+          <PrivateRoute>
+            <AllMenus></AllMenus>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/reviews/:id",
-        element: <Reviews></Reviews>,
+        element: (
+          <PrivateRoute>
+            <Reviews></Reviews>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/menus/${params.id}`),
       },

@@ -15,14 +15,14 @@ const ShowReview = () => {
       });
   }, [user?.email]);
   return (
-    <div className="overflow-x-auto w-full">
+    <div className=" w-full">
       <table className="table w-full">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
-            <th></th>
+        <thead className="text-center">
+          <tr className="text-center">
+            <th className="">Name</th>
+            <th>Review</th>
+            <th>Email</th>
+            <th>Message</th>
           </tr>
         </thead>
         <tbody>

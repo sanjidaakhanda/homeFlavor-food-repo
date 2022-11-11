@@ -66,7 +66,7 @@ const Reviews = () => {
             className="input input-bordered w-full "
           />
           <input
-            type="email"
+            type="text"
             placeholder="Your Email"
             name="email"
             defaultValue={user?.email}
