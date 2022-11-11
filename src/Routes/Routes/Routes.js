@@ -60,5 +60,13 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: (
+      <div>
+        <h1 className=" text-6xl text-center text-rose-500">No data found</h1>
+      </div>
+    ),
+  },
 ]);
 export default router;

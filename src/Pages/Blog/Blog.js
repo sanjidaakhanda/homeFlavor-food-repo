@@ -3,25 +3,25 @@ import React from "react";
 const Blog = () => {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-rose-500 text-center mb-5">
+      <h1 className="text-4xl font-bold text-sky-500 text-center mb-5">
         Blog Questions
       </h1>
       <div className="collapse">
         <input type="checkbox" />
         <div className="collapse-title text-xl font-medium">
-          <p className="text-xl text-rose-500 font-bold">
+          <p className="text-xl text-sky-500 font-bold">
             Difference between SQL and NoSQL?
           </p>
         </div>
         <div className="collapse-content">
           <p>
-            <span className="text-xl text-rose-500 font-bold"> SQL</span>--Is
-            SQL better or NoSQL? SQL databases are efficient at processing
-            queries and joining data across tables, making it easier to perform
-            complex queries against structured data, including ad hoc requests.
+            <span className="text-xl text-sky-500 font-bold"> SQL</span>--Is SQL
+            better or NoSQL? SQL databases are efficient at processing queries
+            and joining data across tables, making it easier to perform complex
+            queries against structured data, including ad hoc requests.
           </p>
           <p>
-            <span className="text-xl text-rose-500 font-bold">NoSQL</span>
+            <span className="text-xl text-sky-500 font-bold">NoSQL</span>
             --databases lack consistency across products and typically require
             more work to query data, particular as query complexity increases.
           </p>
@@ -30,7 +30,7 @@ const Blog = () => {
       <div className="collapse">
         <input type="checkbox" />
         <div className="collapse-title text-xl font-medium">
-          <p className="text-xl text-rose-500 font-bold">
+          <p className="text-xl text-sky-500 font-bold">
             What is JWT, and how does it work?
           </p>
         </div>
@@ -46,7 +46,7 @@ const Blog = () => {
       <div className="collapse">
         <input type="checkbox" />
         <div className="collapse-title text-xl font-medium">
-          <p className="text-xl text-rose-500 font-bold">
+          <p className="text-xl text-sky-500 font-bold">
             What is the difference between javascript and NodeJS?
           </p>
         </div>
@@ -62,7 +62,7 @@ const Blog = () => {
       <div className="collapse">
         <input type="checkbox" />
         <div className="collapse-title text-xl font-medium">
-          <p className="text-xl text-rose-500 font-bold">
+          <p className="text-xl text-sky-500 font-bold">
             How does NodeJS handle multiple requests at the same time?
           </p>
         </div>
